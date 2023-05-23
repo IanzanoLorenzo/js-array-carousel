@@ -1,6 +1,6 @@
 "use strict";
 
-const image = ['01.webp', '02.webp', '03.webp', '04.webp','#'];
+const image = ['01.webp', '02.webp', '03.webp', '04.webp'];
 const avanti = document.getElementById('avanti');
 const indietro = document.getElementById('indietro');
 const carousel = document.getElementById('carousel')
