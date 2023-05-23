@@ -1,6 +1,6 @@
 "use strict";
 
-const image = ['01.webp', '02.webp', '03.webp', '04.webp','#'];
+const image = ['01.webp', '02.webp', '03.webp', '04.webp'];
 const avanti = document.getElementById('avanti');
 const indietro = document.getElementById('indietro');
 const carousel = document.getElementById('carousel')
@@ -24,6 +24,8 @@ avanti.addEventListener('click', function(){
 
     if(imgCorrente < image.length - 1){
         imgCorrente++;
+    } else {
+        imgCorrente = 0
     }
 
     slides[imgCorrente].classList.add('active')
@@ -38,6 +40,8 @@ indietro.addEventListener('click', function(){
 
     if(imgCorrente > 0){
         imgCorrente--;
+    } else {
+        imgCorrente = image.length -1
     }
 
     slides[imgCorrente].classList.add('active')
