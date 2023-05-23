@@ -17,7 +17,7 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
 
 
 
-1 - generare le immagini del carosello
+1 - generare le immagini del carosello nascoste
 2 - cliccando sulla freccia in alto
     2.1 - rendi attiva la prossima immagine
     2.2 - ? SE è l'ultima immagine
@@ -26,3 +26,4 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
     3.1 - rendi attiva l'immagine precedente
     3.2 - ? SE è la prima immagine
         3.2.1 - non fare niente 
+FINE
