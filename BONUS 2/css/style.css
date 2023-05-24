@@ -5,45 +5,57 @@
 }
 
 .container{
-    width: 900px;
+    width: 1200px;
     height: 400px;
     position: absolute;
     left: 50vw;
     top: 50vh;
     transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
 }
 /* carosello */
-.carousel{
-    width: 100%;
+#carousel{
+    width: 80%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.carousel i{
+#previews:hover i, #carousel:hover i{
+    display: flex;
+}
+
+#previews i,#carousel i{
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     width: 40px;
     height: 40px;
-    display: flex;
     align-items: center;
     justify-content: center;
     transition: all .1s linear;
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 50%;
     z-index: 20;
+    cursor: pointer;
+    display: none;
 }
 
-.carousel i:hover{
+#previews i:hover,#carousel i:hover{
     font-size: 25px;
 }
 
-.carousel i.fa-angle-up{
+i.fa-angle-up{
     top: 5px;
 }
 
-.carousel i.fa-angle-down{
+i.fa-angle-down{
     bottom: 5px;
 }
 /* slide */
@@ -51,10 +63,12 @@
     width: 100%;
     height: 100%;
     display: none;
+    transition: all 0.5s linear;
 }
 
 .slide.active{
     display: flex;
+    transition: all 0.5s linear;
 }
 
 img{
@@ -63,3 +77,27 @@ img{
     object-fit: cover;
 }
 
+/* preview */
+
+#previews{
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.preview{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.preview img{
+    filter: brightness(50%);
+    transition: all 0.5s linear;
+}
+
+.preview.active img{
+    filter: brightness(100%);
+    transition: all 0.5s linear;
+}
